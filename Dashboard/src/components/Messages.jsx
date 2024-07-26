@@ -10,7 +10,7 @@ const Messages = () => {
   useEffect(() =>{
     const fectMessages = async () =>{
       try {
-        const { data } = await axios.get("http://localhost:4000/api/v1/message/getall", 
+        const { data } = await axios.get("https://mern-stack-project-backend-g1wy.onrender.com/api/v1/message/getall", 
         { withCredentials: true }
       );
         setMessages(data.messages);
